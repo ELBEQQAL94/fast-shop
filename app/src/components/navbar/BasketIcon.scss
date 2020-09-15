@@ -1,0 +1,42 @@
+@import "../../App.scss";
+
+.basket {
+  color: $white;
+  text-decoration: none;
+  .basket__container {
+    display: flex;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-weight: bold;
+    .basket__container--icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        color: orange;
+      }
+      .MuiSvgIcon-root {
+        font-size: 2em;
+      }
+    }
+    .cart {
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      text-transform: capitalize;
+      font-size: 13px;
+    }
+  }
+}
+
+// Media Queries
+@media (max-width: #{$bp-xsmall}) {
+  .basket__container--icon {
+    .MuiSvgIcon-root {
+      font-size: 1.5em !important;
+    }
+  }
+  .cart {
+    font-size: 10px !important;
+  }
+}
