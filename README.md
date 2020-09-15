@@ -4,19 +4,19 @@
 ### TODO:
 ----
 
-* [ ] Install react app
-* [ ] Create repo
+* [x] Install react app
+* [x] Create repo
 * [ ] Create project in firebase
 * [ ] Install node-sass
 * [x] Install eslint
 * [x] Install prettier
-* [ ] Install axios
-* [ ] Favicon
-* [ ] Create Services
-* [ ] Create components folder
-* [ ] Add prop types
-* [ ] Deploy application on vercel
-* [ ] Context API
+* [x] Install axios
+* [x] Favicon
+* [x] Create Services
+* [x] Create components folder
+* [x] Add prop types
+* [x] Deploy application on vercel
+* [x] Context API
 * [ ] Firebase (firestore)
 * [ ] Firebase (send emails)
 * [ ] React Router
