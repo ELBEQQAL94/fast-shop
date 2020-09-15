@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState} from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,60 +8,29 @@ import {
 // Components
 import { Navbar } from './components';
 
-// Auth
-import { Login } from './pages/auth';
-
 // Pages
-import { Home, Checkout } from './pages';
+import { Home } from './pages';
 
 // Data layer
 import { useStateValue } from './store/StateProvider';
 
-// Actions Types
-import { SET_USER } from './store/types';
-
-// Auhtentication with firebase
-import { auth } from './services/firebase';
-
 const Routers = () => {
 
-  const [{user}, dispatch] = useStateValue();
-
-  useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((authUser) => {
-      if(authUser) {
-        dispatch({
-          type: SET_USER,
-          user: authUser,
-        });
-      } else {
-        dispatch({
-          type: SET_USER,
-          user: null,
-        });
-      }
-    });
-
-    return () => {
-      // cleanup
-      unsubscribe();
-    };
-  },[]);
+  const [selecetdOption, setSelecetdOption] = useState(request.all)
 
   return (
     <Router>
-      <div className="App">
+      <div className="app">
         <Switch>
           <Route exact path='/'>
             <Navbar />
             <Home />
           </Route>
           <Route path='/checkout'>
-            <Navbar />
-            <Checkout />
+            <h1>CheckOut</h1>
           </Route>
-          <Route path='/login'>
-            <Login />
+          <Route path='/product'>
+            <h1>Product</h1>
           </Route>
         </Switch>
       </div>

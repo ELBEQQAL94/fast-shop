@@ -1,10 +1,12 @@
 import React from 'react';
 
+// Types
+import PropTypes from 'prop-types';
+
 // Components
 import LogoContainer from './LogoContainer';
-import SearchBox from './SearchBox';
-import Links from './Links';
 import BasketIcon from './BasketIcon';
+import NavItem from './NavItem';
 
 // State Provider
 import {useStateValue} from '../../store/StateProvider';
@@ -12,24 +14,29 @@ import {useStateValue} from '../../store/StateProvider';
 // Style
 import "./Navbar.scss";
 
-const Navbar = () => {
+const Navbar = ({selecetdOption, setSelecetdOption}) => {
 
-  const [{cart, user}] = useStateValue();
+  const [{cart}] = useStateValue();
 
   return (
     <header className="header">
       <div className="header__container">
         <LogoContainer />
-        <SearchBox />
-        <Links user={user} />
         <BasketIcon cart={cart}/>
       </div>
-      {/* Search box for mobile */}
-      <div className="search__box--mobile">
-        <SearchBox />
-      </div>
+      <nav className="nav">
+        <NavItem
+        selecetdOption={selecetdOption}
+        setSelecetdOption={setSelecetdOption}
+        />
+      </nav>
     </header>
   );
+};
+
+Navbar.propTypes = {
+  setSelecetdOption: PropTypes.string.isRequired,
+  selecetdOption: PropTypes.string.isRequired,
 };
 
 export default Navbar;

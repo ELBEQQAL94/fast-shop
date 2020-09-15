@@ -16,13 +16,6 @@ import Routers from './Routers';
 // Styles
 import "./App.scss";
 
-const App = () => {
-  return (
-    <div>
-      Fast Shop
-    </div>
-
-  )
-};
+const App = () => <Routers />;
 
 export default App;

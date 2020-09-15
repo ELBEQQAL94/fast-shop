@@ -1,8 +1,8 @@
 @import "../../App.scss";
 
 .header {
-  background: $primary;
-  padding: 5px 0;
+  background-color: #01304a;
+  padding: 20px;
   // position: fixed;
   // top: 0;
   // z-index: 100;
@@ -13,21 +13,37 @@
     justify-content: space-between;
     color: $white;
   }
-  .search__box--mobile {
-    display: none;
-  }
-}
-
-// Media Queries
-@media (max-width: #{$bp-xsmall}) {
-  .header {
-    padding: 10px;
-    .search__box--mobile {
-      margin-top: 1.2em;
-      display: block !important;
-      .search__box {
-        display: block;
+  .nav {
+    -ms-overflow-style: none; // IE, Edge
+    scrollbar-width: none; // Firefox
+    color: $white;
+    overflow-x: scroll;
+    padding: 30px;
+    .nav--active {
+      color: $hulu-color;
+    }
+    ul {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        text-transform: capitalize;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+        opacity: 0.7;
+        transition: transform 0.5s ease-out;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+          transform: scale(1.4);
+        }
       }
+    }
+    // hide scroll bar on Chrome, Safari, and Opera
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
 }

@@ -3,6 +3,7 @@ $primary: #131921;
 $white: #fff;
 $light: rgb(209, 203, 203);
 $amazon-color: #febd69;
+$hulu-color: #6DE883;
 
 // Breakpoints
 $bp-xsmall: 568px;
@@ -33,6 +34,9 @@ $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 .container {
   margin: 0 auto;
   max-width: 1024px;
+}
+
+.app {
 }
 
 .container {
