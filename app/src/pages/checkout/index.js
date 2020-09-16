@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Style
-import './Checkout.scss';
+import './index.scss';
 
 const Checkout = () => {
   return (

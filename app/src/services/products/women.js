@@ -10,41 +10,9 @@ import tShirts from './t-shirts';
 // watches
 import watches from './watches';
 
+// utlis functions
+import { filetrManyArrays } from '../../utils';
 
-function filterByGender(jeans, shoes, tShirts, watches, filter) {
-  
-  let result = [];
+const women = filetrManyArrays(jeans, shoes, tShirts, watches, "women");
 
-  // jeans 
-  jeans.foreeach((product) => {
-    if(product.gender === "women") {
-      men.push(product);
-    };
-  });
-
-  // shoes 
-  shoes.foreeach((product) => {
-    if(product.gender === "women") {
-      men.push(product);
-    };
-  });
-
-  // t-shirts 
-  tShirts.foreeach((product) => {
-    if(product.gender === "women") {
-      men.push(product);
-    };
-  });
-
-
-  // watches 
-  watches.foreeach((product) => {
-    if(product.gender === "women") {
-      men.push(product);
-    };
-  });
-
-  return result;
-};
-
-export default filterByGender(jeans, shoes, tShirts, watches);
+export default women;

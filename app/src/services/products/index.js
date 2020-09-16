@@ -3,6 +3,8 @@ import watches from './watches';
 import tShirts from './t-shirts';
 import shoes from './shoes';
 import jeans from './jeans';
+import women from './women';
+import men from './men';
 
 export {
   all,
@@ -10,4 +12,6 @@ export {
   tShirts,
   shoes,
   jeans,
+  men,
+  women,
 };

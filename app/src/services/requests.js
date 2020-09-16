@@ -1,11 +1,11 @@
-import { 
-  watches, 
-  tShirts, 
-  shoes, 
-  jeans, 
-  all, 
-  women, 
-  men 
+import {
+  watches,
+  tShirts,
+  shoes,
+  jeans,
+  all,
+  women,
+  men,
 } from './products';
 
 const requests = {

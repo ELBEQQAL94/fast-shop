@@ -1,35 +1,15 @@
-export function filterByGender(jeans, shoes, tShirts, watches, filter) {
-  
+export function filetrManyArrays(...args) {
+  const filter = args[args.length - 1];
+  const arrCount = args.length - 1;
   let result = [];
 
-  // jeans 
-  jeans.foreeach((product) => {
-    if(product.gender === filter) {
-      men.push(product);
-    };
-  });
-
-  // shoes 
-  shoes.foreeach((product) => {
-    if(product.gender === filter) {
-      men.push(product);
-    };
-  });
-
-  // t-shirts 
-  tShirts.foreeach((product) => {
-    if(product.gender === filter) {
-      men.push(product);
-    };
-  });
-
-
-  // watches 
-  watches.foreeach((product) => {
-    if(product.gender === filter) {
-      men.push(product);
-    };
-  });
+  for(let i = 0; i < arrCount; i++) {
+    args[i].forEach((product) => {
+      if(product.gender === filter) {
+        result.push(product);
+      }
+    })
+  }
 
   return result;
-};
+}
