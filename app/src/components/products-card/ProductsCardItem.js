@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 // Material UI Icons
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
@@ -10,7 +10,7 @@ import { useStateValue } from '../../store/StateProvider';
 import { ADD_TO_CART } from '../../store/types';
 
 // Components
-import { Button, Price, Stars } from '../elements';
+import { Button, Price } from '../elements';
 
 // Types
 import PropTypes from 'prop-types';
@@ -18,15 +18,18 @@ import PropTypes from 'prop-types';
 // Style
 import "./ProductsCardItem.scss";
 
-const ProductsCardItem = ({
+const ProductsCardItem = forwardRef(({
   id,
-  title,
+  name,
   image,
-  rating,
   price,
-}) => {
+  solde,
+  oldPrice,
+}, ref) => {
 
   const [{cart}, dispatch] = useStateValue();
+
+  console.log("CART: ", cart);
 
   // add to cart
   const addToCart = () => {
@@ -34,36 +37,38 @@ const ProductsCardItem = ({
       type: ADD_TO_CART,
       item: {
         id,
-        title,
+        name,
         image,
-        rating,
         price,
       },
     });
   };
 
   return (
-    <div className="products__card__item">
+    <div className="products__card__item" ref={ref}>
       <img
         src={image}
-        alt={title}
-        title={title}
+        alt={name}
+        title={name}
         className="products__card__item--img"
       />
-      <p className="product__title">{title}</p>
-      <Stars rating={rating} />
-      <Price price={price} />
-      <Button Icon={AddShoppingCartIcon} title="Add to Cart" func={addToCart}/>
+      <p className="product__title">{name}</p>
+      <div className="price__container">
+        <Price price={price} />
+        { solde && <p className="solde">{oldPrice}<small>dh</small></p>}
+      </div>
+      <Button Icon={AddShoppingCartIcon} title="AJOUTER AU PANIER" func={addToCart}/>
     </div>
   );
-};
+});
 
 ProductsCardItem.propTypes = {
   id: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
   price: PropTypes.number.isRequired,
+  solde: PropTypes.bool.isRequired,
+  oldPrice: PropTypes.number.isRequired,
 };
 
 export default ProductsCardItem;

@@ -9,8 +9,8 @@ import "./Price.scss";
 const Price = ({price}) => {
   return (
     <p className="product__price">
-      <small>$</small>
       <strong>{price}</strong>
+      <small>dh</small>
     </p>
   );
 };

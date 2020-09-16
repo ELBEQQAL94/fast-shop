@@ -3,7 +3,7 @@ const watches = [
   {
     id: 1,
     name: "Donerton Smart Watch",
-    price: "15.32",
+    price: 15.32,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/617aPQkNYHL._AC_UL320_.jpg",
@@ -19,14 +19,14 @@ const watches = [
       },
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     colors: ["black", "white", "brown"],
     gender: "women",
   },
   {
     id: 2,
     name: "Mens Watches Mechanical Automatic Self-Winding",
-    price: "60.15",
+    price: 60.15,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/71RSNEqQjtL._AC_UL320_.jpg",
@@ -42,14 +42,14 @@ const watches = [
       },
     ],
     solde: true,
-    old_price: "99.99",
+    old_price: 99.99,
     colors: ["black", "white", "gold"],
     gender: "women",
   },
   {
     id: 3,
     name: "Fitbit Versa 2 Health and Fitness Smartwatch with Heart Rate",
-    price: "30.35",
+    price: 30.35,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/61JzeOC9rsL._AC_UL320_.jpg",
@@ -61,14 +61,14 @@ const watches = [
       },
     ],
     solde: true,
-    old_price: "70.48",
+    old_price: 70.48,
     colors: ["white", "black"],
     gender: "men",
   },
   {
     id: 4,
     name: "Samsung Galaxy Watch ",
-    price: "145.15",
+    price: 145.15,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/71uveJVT5IL._AC_UL320_.jpg",
@@ -80,7 +80,7 @@ const watches = [
       },
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     colors: ["black", "gold"],
     gender: "men",
   },

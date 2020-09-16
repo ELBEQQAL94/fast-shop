@@ -3,7 +3,7 @@ const jeans = [
   {
     id: 1,
     name: "Goodthreads Women's High-Rise Skinny Jean",
-    price: "40.00",
+    price: 40.00,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/81Jnc53FoOL._AC_UL320_.jpg",
@@ -15,7 +15,7 @@ const jeans = [
       },
     ],
     solde: true,
-    old_price: "150.42",
+    old_price: 150.42,
     sizes: [
       "24(00) Short",
       "25(0) Short",
@@ -45,7 +45,7 @@ const jeans = [
   {
     id: 2,
     name: "Goodthreads Men's Slim-Fit Selvedge Jean",
-    price: "142.32",
+    price: 142.32,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/811224LsH9L._AC_UL320_.jpg",
@@ -57,7 +57,7 @@ const jeans = [
       },
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     sizes: [
       "24(00) Short",
       "25(0) Short",
@@ -87,7 +87,7 @@ const jeans = [
   {
     id: 3,
     name: "Levi's Men's 501 Original Fit Jeans",
-    price: "30.45",
+    price: 30.45,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/51WBk2gSIjL._AC_UL320_.jpg",
@@ -103,7 +103,7 @@ const jeans = [
       },
     ],
     solde: true,
-    old_price: "78.23",
+    old_price: 78.23,
     sizes: [
       "24(00) Short",
       "25(0) Short",
@@ -133,7 +133,7 @@ const jeans = [
   {
     id: 4,
     name: "Daily Ritual Women's High-Rise Skinny Jean",
-    price: "48.14",
+    price: 48.14,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/81RDUDeClLL._AC_UL320_.jpg",
@@ -149,7 +149,7 @@ const jeans = [
       },
     ],
     solde: true,
-    old_price: "143",
+    old_price: 143,
     sizes: [
       "24(00) Short",
       "25(0) Short",
@@ -179,7 +179,7 @@ const jeans = [
   {
     id: 5,
     name: "American Apparel Women's High-Waist Jean",
-    price: "123",
+    price: 123,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/71y6LE5Xp-L._AC_UL320_.jpg",
@@ -187,7 +187,7 @@ const jeans = [
       },
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     sizes: [
       "24(00) Short",
       "25(0) Short",

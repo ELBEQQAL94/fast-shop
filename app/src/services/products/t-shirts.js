@@ -3,7 +3,7 @@ const tShirts = [
   {
     id: 1,
     name: "Gildan Men's G2000 Ultra Cotton Adult T-Shirt",
-    price: "14",
+    price: 14,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/71a82Qa+vnL._AC_UL320_.jpg",
@@ -19,7 +19,7 @@ const tShirts = [
       },
     ],
     solde: true,
-    old_price: "20.22",
+    old_price: 20.22,
     sizes: ["m", "l", "xl"],
     colors: ["orange", "black", "white"],
     gender: "men",
@@ -27,7 +27,7 @@ const tShirts = [
   {
     id: 2,
     name: "Under Armour Men's Tech 2.0 Short Sleeve T-Shirt",
-    price: "19.20",
+    price: 19.20,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/81FPcR64ClL._AC_UL320_.jpg",
@@ -39,7 +39,7 @@ const tShirts = [
       },
     ],
     solde: true,
-    old_price: "30.14",
+    old_price: 30.14,
     sizes: ["m", "l", "xl"],
     colors: ["black", "pink"],
     gender: "men",
@@ -47,7 +47,7 @@ const tShirts = [
   {
     id: 3,
     name: "Hanes Sport Women's Cool DRI Performance V-Neck Tee",
-    price: "30",
+    price: 30,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/81gNC0hPf0L._AC_UL320_.jpg",
@@ -63,7 +63,7 @@ const tShirts = [
       }
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     sizes: ["m", "l", "xl"],
     colors: ["black", "white", "yellow"],
     gender: "women",
@@ -71,7 +71,7 @@ const tShirts = [
   {
     id: 4,
     name: "Be Kind T Shirts Women Cute Graphic Blessed Shirt Funny ",
-    price: "40.44",
+    price: 40.44,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/61xyGKwt0SL._AC_UL320_.jpg",
@@ -87,7 +87,7 @@ const tShirts = [
       },
     ],
     solde: true,
-    old_price: "100.22",
+    old_price: 100.22,
     sizes: ["m", "l", "xl"],
     colors: ["black", "yellow", "brown"],
     gender: "women",

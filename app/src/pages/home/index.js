@@ -4,16 +4,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Components
-// import { Banner, Products, ProductsCard } from '../../components';
+import { ProductsCard } from '../../components';
 
 // Style
 import "./index.scss";
 
 const Home = ({selecetdOption}) => {
-  console.log("selceted option: ", selecetdOption);
+  // console.log("selcted option: ", selecetdOption);
   return(
-    <div>
-      Home!
+    <div className="home">
+      <h1>nos offres</h1>
+      <ProductsCard products={selecetdOption}/>
     </div>
   );
 };

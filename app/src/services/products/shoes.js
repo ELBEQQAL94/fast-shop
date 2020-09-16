@@ -3,7 +3,7 @@ const Shoes = [
   {
     id: 1,
     name: "adidas Men's Grand Court Sneaker",
-    price: "147.26",
+    price: 147.26,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/41d6LOJTMTL._AC_UL320_.jpg",
@@ -19,7 +19,7 @@ const Shoes = [
       },
     ],
     solde: true,
-    old_price: "200",
+    old_price: 200,
     sizes: ["3", "5", "8"],
     colors: ["blue", "gray", "white"],
     gender: "men",
@@ -27,7 +27,7 @@ const Shoes = [
   {
     id: 2,
     name: "Skechers Work Cessnock",
-    price: "100.00",
+    price: 100.00,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/71k4rWgqrHL._AC_UL320_.jpg",
@@ -39,7 +39,7 @@ const Shoes = [
       },
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     sizes: ["3", "5", "8"],
     colors: ["black", "purple"],
     gender: "men",
@@ -47,7 +47,7 @@ const Shoes = [
   {
     id: 3,
     name: "Converse Chuck Taylor All Star Low Top",
-    price: "65.60",
+    price: 65.60,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/71BqXmSHK2L._AC_UL320_.jpg",
@@ -55,7 +55,7 @@ const Shoes = [
       },
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     sizes: ["3", "5", "8"],
     colors: ["white"],
     gender: "women",
@@ -63,7 +63,7 @@ const Shoes = [
   {
     id: 4,
     name: "PUMA Women's Carina Sneaker",
-    price: "105.01",
+    price: 105.01,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/71FfObARk-L._AC_UL320_.jpg",
@@ -75,7 +75,7 @@ const Shoes = [
       },
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     sizes: ["3", "5", "8"],
     colors: ["white", "black"],
     gender: "women",

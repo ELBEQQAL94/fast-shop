@@ -2,7 +2,8 @@ const all = [
   {
     id: 1,
     name: "Goodthreads Women's High-Rise Skinny Jean",
-    price: "40.00",
+    slug: "goodthreads-women-s-high-rise-skinny-jean",
+    price: 40.00,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/81Jnc53FoOL._AC_UL320_.jpg",
@@ -14,7 +15,7 @@ const all = [
       },
     ],
     solde: true,
-    old_price: "150.42",
+    old_price: 150.42,
     sizes: [
       "24(00) Short",
       "25(0) Short",
@@ -44,7 +45,8 @@ const all = [
   {
     id: 2,
     name: "Goodthreads Men's Slim-Fit Selvedge Jean",
-    price: "142.32",
+    slug: "goodthreads-men-s-slim-fit-selvedge-jean",
+    price: 142.32,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/811224LsH9L._AC_UL320_.jpg",
@@ -56,7 +58,7 @@ const all = [
       },
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     sizes: [
       "24(00) Short",
       "25(0) Short",
@@ -86,7 +88,8 @@ const all = [
   {
     id: 3,
     name: "Levi's Men's 501 Original Fit Jeans",
-    price: "30.45",
+    slug: "levi-s-men-s-501-original-fit-jeans",
+    price: 30.45,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/51WBk2gSIjL._AC_UL320_.jpg",
@@ -102,7 +105,7 @@ const all = [
       },
     ],
     solde: true,
-    old_price: "78.23",
+    old_price: 78.23,
     sizes: [
       "24(00) Short",
       "25(0) Short",
@@ -132,7 +135,8 @@ const all = [
   {
     id: 4,
     name: "Daily Ritual Women's High-Rise Skinny Jean",
-    price: "48.14",
+    slug: "daily-ritual-women-s-high-rise-skinny-jean",
+    price: 48.14,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/81RDUDeClLL._AC_UL320_.jpg",
@@ -148,7 +152,7 @@ const all = [
       },
     ],
     solde: true,
-    old_price: "143",
+    old_price: 143,
     sizes: [
       "24(00) Short",
       "25(0) Short",
@@ -178,7 +182,8 @@ const all = [
   {
     id: 5,
     name: "American Apparel Women's High-Waist Jean",
-    price: "123",
+    slug: "american-apparel-women-s-high-waist-jean",
+    price: 123,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/71y6LE5Xp-L._AC_UL320_.jpg",
@@ -186,7 +191,7 @@ const all = [
       },
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     sizes: [
       "24(00) Short",
       "25(0) Short",
@@ -216,7 +221,8 @@ const all = [
   {
     id: 6,
     name: "adidas Men's Grand Court Sneaker",
-    price: "147.26",
+    slug: "adidas-men-s-grand-court-sneaker",
+    price: 147.26,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/41d6LOJTMTL._AC_UL320_.jpg",
@@ -232,7 +238,7 @@ const all = [
       },
     ],
     solde: true,
-    old_price: "200",
+    old_price: 200,
     sizes: ["3", "5", "8"],
     colors: ["blue", "gray", "white"],
     gender: "men",
@@ -240,7 +246,8 @@ const all = [
   {
     id: 7,
     name: "Skechers Work Cessnock",
-    price: "100.00",
+    slug: "skechers-work-cessnock",
+    price: 100.00,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/71k4rWgqrHL._AC_UL320_.jpg",
@@ -252,7 +259,7 @@ const all = [
       },
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     sizes: ["3", "5", "8"],
     colors: ["black", "purple"],
     gender: "men",
@@ -260,7 +267,8 @@ const all = [
   {
     id: 8,
     name: "Converse Chuck Taylor All Star Low Top",
-    price: "65.60",
+    slug: "converse-chuck-taylor-all-star-low-top",
+    price: 65.60,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/71BqXmSHK2L._AC_UL320_.jpg",
@@ -268,7 +276,7 @@ const all = [
       },
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     sizes: ["3", "5", "8"],
     colors: ["white"],
     gender: "women",
@@ -276,7 +284,8 @@ const all = [
   {
     id: 9,
     name: "PUMA Women's Carina Sneaker",
-    price: "105.01",
+    slug: "puma-women-s-carina-sneaker",
+    price: 105.01,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/71FfObARk-L._AC_UL320_.jpg",
@@ -288,7 +297,7 @@ const all = [
       },
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     sizes: ["3", "5", "8"],
     colors: ["white", "black"],
     gender: "women",
@@ -296,7 +305,8 @@ const all = [
   {
     id: 10,
     name: "Gildan Men's G2000 Ultra Cotton Adult T-Shirt",
-    price: "14",
+    slug: "gildan-men-s-g2000-ultra-cotton-adult-t-shirt",
+    price: 14,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/71a82Qa+vnL._AC_UL320_.jpg",
@@ -312,7 +322,7 @@ const all = [
       },
     ],
     solde: true,
-    old_price: "20.22",
+    old_price: 20.22,
     sizes: ["m", "l", "xl"],
     colors: ["orange", "black", "white"],
     gender: "men",
@@ -320,7 +330,8 @@ const all = [
   {
     id: 11,
     name: "Under Armour Men's Tech 2.0 Short Sleeve T-Shirt",
-    price: "19.20",
+    slug: "under-armour-men-s-tech-2.0-short-sleeve-t-shirt",
+    price: 19.20,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/81FPcR64ClL._AC_UL320_.jpg",
@@ -332,7 +343,7 @@ const all = [
       },
     ],
     solde: true,
-    old_price: "30.14",
+    old_price: 30.14,
     sizes: ["m", "l", "xl"],
     colors: ["black", "pink"],
     gender: "men",
@@ -340,7 +351,8 @@ const all = [
   {
     id: 12,
     name: "Hanes Sport Women's Cool DRI Performance V-Neck Tee",
-    price: "30",
+    slug: "hanes-sport-women-s-cool-dri-performance-v-neck-tee",
+    price: 30,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/81gNC0hPf0L._AC_UL320_.jpg",
@@ -356,15 +368,16 @@ const all = [
       }
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     sizes: ["m", "l", "xl"],
     colors: ["black", "white", "yellow"],
     gender: "women",
   },
   {
     id: 13,
-    name: "Be Kind T Shirts Women Cute Graphic Blessed Shirt Funny ",
-    price: "40.44",
+    name: "Be Kind T Shirts Women Cute Graphic Blessed Shirt Funny",
+    slug: "be-Kind-t-shirts-women-cute-graphic-blessed-shirt-funny",
+    price: 40.44,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/61xyGKwt0SL._AC_UL320_.jpg",
@@ -380,7 +393,7 @@ const all = [
       },
     ],
     solde: true,
-    old_price: "100.22",
+    old_price: 100.22,
     sizes: ["m", "l", "xl"],
     colors: ["black", "yellow", "brown"],
     gender: "women",
@@ -388,7 +401,8 @@ const all = [
   {
     id: 14,
     name: "Donerton Smart Watch",
-    price: "15.32",
+    slug: "donerton-smart-watch",
+    price: 15.32,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/617aPQkNYHL._AC_UL320_.jpg",
@@ -404,14 +418,15 @@ const all = [
       },
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     colors: ["black", "white", "brown"],
     gender: "women",
   },
   {
     id: 15,
     name: "Mens Watches Mechanical Automatic Self-Winding",
-    price: "60.15",
+    slug: "mens-watches-mechanical-automatic-self-winding",
+    price: 60.15,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/71RSNEqQjtL._AC_UL320_.jpg",
@@ -427,14 +442,15 @@ const all = [
       },
     ],
     solde: true,
-    old_price: "99.99",
+    old_price: 99.99,
     colors: ["black", "white", "gold"],
     gender: "women",
   },
   {
     id: 16,
     name: "Fitbit Versa 2 Health and Fitness Smartwatch with Heart Rate",
-    price: "30.35",
+    slug: "fitbit-versa-2-health-and-fitness-smartwatch-with-heart-rate",
+    price: 30.35,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/61JzeOC9rsL._AC_UL320_.jpg",
@@ -446,14 +462,15 @@ const all = [
       },
     ],
     solde: true,
-    old_price: "70.48",
+    old_price: 70.48,
     colors: ["white", "black"],
     gender: "men",
   },
   {
     id: 17,
-    name: "Samsung Galaxy Watch ",
-    price: "145.15",
+    name: "Samsung Galaxy Watch",
+    slug: "samsung-galaxy-watch",
+    price: 145.15,
     images: [
       {
         image: "https://m.media-amazon.com/images/I/71uveJVT5IL._AC_UL320_.jpg",
@@ -465,7 +482,7 @@ const all = [
       },
     ],
     solde: false,
-    old_price: "",
+    old_price: null,
     colors: ["black", "gold"],
     gender: "men",
   },

@@ -1,4 +1,4 @@
-## Amazon Clone
+## E-commerce website
 ----
 
 ### TODO:
@@ -6,8 +6,8 @@
 
 * [x] Install react app
 * [x] Create repo
-* [ ] Create project in firebase
-* [ ] Install node-sass
+* [x] Create project in firebase
+* [x] Install node-sass
 * [x] Install eslint
 * [x] Install prettier
 * [x] Install axios
@@ -17,12 +17,10 @@
 * [x] Add prop types
 * [x] Deploy application on vercel
 * [x] Context API
-* [ ] Firebase (firestore)
+* [x] Firebase (firestore)
 * [ ] Firebase (send emails)
-* [ ] React Router
-* [ ] Add Navbar
-* [ ] Add Banner
-* [ ] Add Row and RowItem
+* [x] React Router
+* [x] Add Navbar
 * [ ] Add Products To Card
 * [x] Add Subtotal box
 * [ ] Add Basket on the bottom of the page (check material ui components)
@@ -30,10 +28,9 @@
 * [ ] Add react flip move and add animation to checkout page
 * [ ] Add name on navbar
 * [ ] Display errors
-
-## API's
-----
-
+* [x] Filter data
+* [ ] Not Found Page
+* [ ] Please check console errors
 
 ## Deployement
 ----

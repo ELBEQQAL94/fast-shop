@@ -6,7 +6,7 @@
   width: 300px;
   margin-left: 1em;
   margin-bottom: 2em;
-  min-height: 400px;
+  min-height: 500px;
   transition: box-shadow 0.5s linear;
   padding: 7px;
   cursor: pointer;
@@ -14,11 +14,21 @@
   &:hover {
     box-shadow: 7px 7px 10px gray;
   }
+  .price__container {
+    display: flex;
+    align-items: center;
+    .solde {
+      font-size: 20px;
+      color: gray;
+      margin-left: 10px;
+      text-decoration: line-through;
+    }
+  }
   .products__card__item--img {
     width: 100% !important;
-    max-height: 200px;
+    max-height: 150px;
     object-fit: contain;
-    margin-bottom: 15px;
+    margin-bottom: 2em;
   }
   .product__title {
     margin-bottom: 2em;
