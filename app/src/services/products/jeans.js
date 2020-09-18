@@ -3,6 +3,7 @@ const jeans = [
   {
     id: 1,
     name: "Goodthreads Women's High-Rise Skinny Jean",
+    slug: "goodthreads-women-s-high-rise-skinny-jean",
     price: 40.00,
     images: [
       {
@@ -45,6 +46,7 @@ const jeans = [
   {
     id: 2,
     name: "Goodthreads Men's Slim-Fit Selvedge Jean",
+    slug: "goodthreads-men-s-slim-fit-selvedge-jean",
     price: 142.32,
     images: [
       {
@@ -87,6 +89,7 @@ const jeans = [
   {
     id: 3,
     name: "Levi's Men's 501 Original Fit Jeans",
+    slug: "levi-s-men-s-501-original-fit-jeans",
     price: 30.45,
     images: [
       {
@@ -133,6 +136,7 @@ const jeans = [
   {
     id: 4,
     name: "Daily Ritual Women's High-Rise Skinny Jean",
+    slug: "daily-ritual-women-s-high-rise-skinny-jean",
     price: 48.14,
     images: [
       {
@@ -179,6 +183,7 @@ const jeans = [
   {
     id: 5,
     name: "American Apparel Women's High-Waist Jean",
+    slug: "american-apparel-women-s-high-waist-jean",
     price: 123,
     images: [
       {

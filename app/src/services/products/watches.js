@@ -3,6 +3,7 @@ const watches = [
   {
     id: 1,
     name: "Donerton Smart Watch",
+    slug: "donerton-smart-watch",
     price: 15.32,
     images: [
       {
@@ -26,6 +27,7 @@ const watches = [
   {
     id: 2,
     name: "Mens Watches Mechanical Automatic Self-Winding",
+    slug: "mens-watches-mechanical-automatic-self-winding",
     price: 60.15,
     images: [
       {
@@ -49,6 +51,7 @@ const watches = [
   {
     id: 3,
     name: "Fitbit Versa 2 Health and Fitness Smartwatch with Heart Rate",
+    slug: "fitbit-versa-2-health-and-fitness-smartwatch-with-heart-rate",
     price: 30.35,
     images: [
       {
@@ -67,7 +70,8 @@ const watches = [
   },
   {
     id: 4,
-    name: "Samsung Galaxy Watch ",
+    name: "Samsung Galaxy Watch",
+    slug: "samsung-galaxy-watch",
     price: 145.15,
     images: [
       {
