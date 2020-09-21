@@ -13,7 +13,7 @@ const Home = ({selecetdOption}) => {
   // console.log("selcted option: ", selecetdOption);
   return(
     <div className="home">
-      <h1>nos offres</h1>
+      <h1 className="home__title">nos offres</h1>
       <ProductsCard products={selecetdOption}/>
     </div>
   );

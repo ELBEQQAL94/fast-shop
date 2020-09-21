@@ -1,4 +1,6 @@
 import React, { useState} from 'react';
+
+// react router dom
 import {
   BrowserRouter as Router,
   Switch,
@@ -37,7 +39,12 @@ const Routers = () => {
           <Route path='/checkout'>
             <h1>CheckOut</h1>
           </Route>
-          <Route path='/product'>
+          <Route path='/product/:productSlug'>
+            <Navbar
+              selecetdOption={selecetdOption}
+              setSelecetdOption={setSelecetdOption}
+            />
+            <BasketIcon cart={cart} />
             <Product />
           </Route>
         </Switch>

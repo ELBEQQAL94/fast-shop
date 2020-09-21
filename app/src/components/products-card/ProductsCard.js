@@ -17,7 +17,7 @@ const ProductsCard = ({ products }) => {
     <div className="products__card">
         <div className="products__card__container">
           {
-            products?.map(({id, name, price, images, solde, old_price}) => (
+            products?.map(({id, name, price, images, solde, old_price, slug}) => (
               <FlipMove>
                 <ProductsCardItem
                   key={id}
@@ -27,6 +27,7 @@ const ProductsCard = ({ products }) => {
                   image={images[0].image}
                   solde={solde}
                   oldPrice={old_price}
+                  slug={slug}
                 />
               </FlipMove>
             ))

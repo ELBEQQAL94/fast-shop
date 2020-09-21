@@ -1,5 +1,8 @@
 import React, { forwardRef } from 'react';
 
+// react router dom
+import { Link } from 'react-router-dom';
+
 // Material UI Icons
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 
@@ -25,6 +28,7 @@ const ProductsCardItem = forwardRef(({
   price,
   solde,
   oldPrice,
+  slug,
 }, ref) => {
 
   const [{cart}, dispatch] = useStateValue();
@@ -40,24 +44,29 @@ const ProductsCardItem = forwardRef(({
         name,
         image,
         price,
+        solde,
+        oldPrice,
+        slug,
       },
     });
   };
 
   return (
     <div className="products__card__item" ref={ref}>
-      <img
-        src={image}
-        alt={name}
-        title={name}
-        className="products__card__item--img"
-      />
-      <p className="product__title">{name}</p>
-      <div className="price__container">
-        <Price price={price} />
-        { solde && <p className="solde">{oldPrice}<small>dh</small></p>}
-      </div>
-      <Button Icon={AddShoppingCartIcon} title="AJOUTER AU PANIER" func={addToCart}/>
+      <Link to={`/product/${slug}`}>
+        <img
+          src={image}
+          alt={name}
+          title={name}
+          className="products__card__item--img"
+        />
+        <p className="product__title">{name}</p>
+        <div className="price__container">
+          <Price price={price} />
+          { solde && <p className="solde">{oldPrice}<small>dh</small></p>}
+        </div>
+        <Button Icon={AddShoppingCartIcon} title="AJOUTER AU PANIER" func={addToCart}/>
+      </Link>
     </div>
   );
 });
@@ -69,6 +78,7 @@ ProductsCardItem.propTypes = {
   price: PropTypes.number.isRequired,
   solde: PropTypes.bool.isRequired,
   oldPrice: PropTypes.number.isRequired,
+  slug: PropTypes.string.isRequired,
 };
 
 export default ProductsCardItem;

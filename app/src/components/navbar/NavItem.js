@@ -1,5 +1,8 @@
 import React from 'react';
 
+// react router
+import { Link } from 'react-router-dom';
+
 // requests
 import requests from '../../services/requests';
 
@@ -10,45 +13,73 @@ const NavItem = ({ selecetdOption, setSelecetdOption }) => (
   <ul>
     <li
       onClick={() => setSelecetdOption(requests.all)}
-      className={`${selecetdOption === requests.all ? 'nav--active' : ''}`}
     >
-      all
+      <Link 
+        to="/" 
+        className={`link__item ${selecetdOption === requests.all ? 'nav--active' : ''}`}
+      >
+        all
+      </Link>
     </li>
     <li
       onClick={() => setSelecetdOption(requests.women)}
-      className={`${selecetdOption === requests.women ? 'nav--active' : ''}`}
     >
-      women
+      <Link 
+        to="/" 
+        className={`link__item ${selecetdOption === requests.women ? 'nav--active' : ''}`}
+      >
+        women
+      </Link>
     </li>
     <li
       onClick={() => setSelecetdOption(requests.men)}
-      className={`${selecetdOption === requests.men ? 'nav--active' : ''}`}
     >
-      men
+      <Link 
+        to="/" 
+        className={`link__item ${selecetdOption === requests.men ? 'nav--active' : ''}`}
+      >
+        men
+      </Link>
     </li>
     <li
       onClick={() => setSelecetdOption(requests.watches)}
-      className={`${selecetdOption === requests.watches ? 'nav--active' : ''}`}
     >
-      watches
+      <Link 
+        to="/" 
+        className={`link__item ${selecetdOption === requests.watches ? 'nav--active' : ''}`}
+      >
+        watches
+      </Link>
     </li>
     <li
       onClick={() => setSelecetdOption(requests.tShirts)}
-      className={`${selecetdOption === requests.tShirts ? 'nav--active' : ''}`}
     >
-      t-shirts
+      <Link 
+        to="/" 
+        className={`link__item ${selecetdOption === requests.tShirts ? 'nav--active' : ''}`}
+      >
+        t-shirts
+      </Link> 
     </li>
     <li
       onClick={() => setSelecetdOption(requests.shoes)}
-      className={`${selecetdOption === requests.shoes ? 'nav--active' : ''}`}
     >
-      shoes
+      <Link 
+        to="/" 
+        className={`link__item ${selecetdOption === requests.shoes ? 'nav--active' : ''}`}
+      >
+        shoes
+      </Link>
     </li>
     <li
       onClick={() => setSelecetdOption(requests.jeans)}
-      className={`${selecetdOption === requests.jeans ? 'nav--active' : ''}`}
     >
-      jeans
+      <Link 
+        to="/" 
+        className={`link__item ${selecetdOption === requests.jeans ? 'nav--active' : ''}`}
+      >
+        jeans
+      </Link>
     </li>
   </ul>
 );

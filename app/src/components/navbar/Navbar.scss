@@ -2,7 +2,7 @@
 
 .header {
   background-color: #01304a;
-  padding: 20px;
+  padding: 10px;
   .header__container {
     display: flex;
     align-items: center;
@@ -12,11 +12,10 @@
   .nav {
     -ms-overflow-style: none; // IE, Edge
     scrollbar-width: none; // Firefox
-    color: $white;
     overflow-x: scroll;
     padding: 30px;
     .nav--active {
-      color: $hulu-color;
+      color: $hulu-color !important;
     }
     ul {
       display: flex;
@@ -31,6 +30,9 @@
         opacity: 0.7;
         transition: transform 0.5s ease-out;
         cursor: pointer;
+        .link__item {
+          color: $white;
+        }
         &:hover {
           opacity: 1;
           transform: scale(1.4);
