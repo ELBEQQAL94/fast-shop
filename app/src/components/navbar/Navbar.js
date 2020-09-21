@@ -22,7 +22,6 @@ const Navbar = ({selecetdOption, setSelecetdOption}) => {
     <header className="header">
       <div className="header__container">
         <LogoContainer />
-        <BasketIcon cart={cart}/>
       </div>
       <nav className="nav">
         <NavItem

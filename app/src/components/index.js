@@ -4,6 +4,7 @@ import Banner from './banner/Banner';
 import Products from './products/Products';
 import ProductsCard from './products-card/ProductsCard';
 import Subtotal from './subtotal/Subtotal';
+import BasketIcon from './navbar/BasketIcon';
 
 export {
   Footer,
@@ -12,4 +13,5 @@ export {
   Products,
   ProductsCard,
   Subtotal,
+  BasketIcon,
 };

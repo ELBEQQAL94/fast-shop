@@ -1,8 +1,11 @@
 @import "../../App.scss";
 
 .basket {
-  color: $white;
+  position: fixed; 
+  bottom: 0; 
+  right: 0;
   text-decoration: none;
+  color: black;
   .basket__container {
     display: flex;
     margin-left: 12px;
@@ -12,9 +15,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      span {
-        color: orange;
-      }
       .MuiSvgIcon-root {
         font-size: 3em;
       }

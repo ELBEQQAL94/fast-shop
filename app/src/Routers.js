@@ -9,7 +9,7 @@ import {
 import requests from './services/requests';
 
 // Components
-import { Navbar } from './components';
+import { Navbar, BasketIcon } from './components';
 
 // Pages
 import { Home, Product } from './pages';
@@ -20,6 +20,7 @@ import { useStateValue } from './store/StateProvider';
 const Routers = () => {
 
   const [selecetdOption, setSelecetdOption] = useState(requests.all)
+  const [{cart}] = useStateValue();
 
   return (
     <Router>
@@ -30,6 +31,7 @@ const Routers = () => {
               selecetdOption={selecetdOption}
               setSelecetdOption={setSelecetdOption}
             />
+            <BasketIcon cart={cart} />
             <Home selecetdOption={selecetdOption} />
           </Route>
           <Route path='/checkout'>
